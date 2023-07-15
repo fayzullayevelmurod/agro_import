@@ -1484,7 +1484,7 @@ header {
         }
     }
 }
-.comment _block {
+.comment_block {
     .title_c {
         h2 {
             color: var(--color-base-text, #4a4a4a);
@@ -1532,3 +1532,212 @@ header {
         }
     }
 }
+
+.poiner_wrapper{
+    .poiner_title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .poiner_btn{
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            color: var(--color-base-text, #4A4A4A);
+            text-align: center;
+            font-family: 'Manrope',sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; 
+            border-radius: 64px;
+            border: 1px solid var(--color-base-text, #4A4A4A);
+            img{
+                margin-left: 8px;
+            }
+        }
+    }
+    .poiner_menu{
+        margin: 64px 0;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        flex-wrap: wrap;
+        .poiner_menu_btn{
+            background-color: transparent;
+            color: var(--color-base-text, #4A4A4A);
+            text-align: center;
+            font-family: Manrope;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            padding: 16px;
+            border-radius: 64px;
+            border: 1px solid var(--color-base-text, #4A4A4A);
+        }
+    }
+    .poiner_img{
+        margin-bottom: 64px;
+        max-width: 966px;
+        img{
+            width: 100%;
+        }
+        .poiner_img_text{
+            color: var(--color-base-text-shift-down-2, #9B9B9B);
+            font-family: 'Manrope',sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 21px;
+            margin-top: 24px;
+        }
+    }
+    .poiner_comment{
+        h4{
+            color: var(--color-base-text, #4A4A4A);
+            font-family: 'Manrope',sans-serif;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+            margin-bottom: 15px;
+        }
+        .poiner_main_text{
+            margin-top: 15px;
+            max-width: 635px;
+        }
+        .poiner_comment_main{
+            margin: 64px 0 104px 0;
+            display: flex;
+            gap: 46px;
+            .poiner_comment_right{
+                .comment_right_text{
+                    margin-top: 0;
+                    color: var(--color-base-text, #4A4A4A);
+                    font-family: 'Manrope',sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    margin-bottom: 24px;
+                    max-width: 525px;
+                }
+                h5{
+                    color: var(--color-base-text, #4A4A4A);
+                    font-family: 'Manrope',sans-serif;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px;
+                    margin-top: 24px;
+                }
+                span{
+                    color: var(--color-base-text-shift-down-2, #9B9B9B);
+                    font-family: 'Manrope',sans-serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 21px;
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+    .poiner_media_share{
+        display: none;
+        margin: 64px 0 104px 0;
+        .poiner_media_share_btn{
+            margin-left: auto;
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            color: var(--color-base-text, #4A4A4A);
+            text-align: center;
+            font-family: 'Manrope',sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; 
+            border-radius: 64px;
+            border: 1px solid var(--color-base-text, #4A4A4A);
+            img{
+                margin-left: 8px;
+            }
+        }
+    }
+    .poiner_news{
+        .poiner_news_title{
+            color: var(--color-base-text, #4A4A4A);
+            font-family: 'Manrope',sans-serif;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px;
+            margin-bottom: 64px;
+        }
+        .poiner_news_cards{
+            gap: 24px;
+            // display: flex;
+            margin-bottom: 64px;
+            .poiner_news_card{
+                max-width: 416px;
+                img{
+                    width: 100%;
+                }
+                h3{
+                    color: var(--color-base-text, #4A4A4A);
+                    font-family: 'Manrope',sans-serif;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 32px;
+                    margin: 24px 0;
+                }
+                p{
+                    max-width: 416px;
+                    color: var(--color-base-text, #4A4A4A);
+                    text-overflow: ellipsis;
+                    font-family: 'Manrope',sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    margin-bottom: 24px;
+                }
+                .poiner_news_card_link{
+                    color: var(--color-base-text, #4A4A4A);
+                    font-family: Manrope;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    border-bottom: 1px solid;
+                }
+            }
+        }
+        .poiner_news_cards_full{
+            margin-bottom: 104px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .poiner_news_cards_full_btn{
+                padding: 16px;
+                background-color: transparent;
+                color: var(--color-base-text, #4A4A4A);
+                text-align: center;
+                font-family: 'Manrope',sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px; 
+                border-radius: 64px;
+                border: 1px solid var(--color-base-text, #4A4A4A);
+            }
+        }
+    }
+}
+
+@import './responsive';
