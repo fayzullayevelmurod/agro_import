@@ -357,6 +357,24 @@
             }
         }
     }
+    .counter_section {
+        .item_counter{
+            .counter_num{
+                h3{
+                    font-size: 96px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 96px;
+                }
+                p{
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
 
 }
 
