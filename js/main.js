@@ -117,3 +117,28 @@ if (img_calculation.length) {
     })
   })
 }
+
+const filter_items = document.querySelectorAll('.filter_datas .filter_item');
+const filter_buttons = document.querySelectorAll('.filter_buttons_list button');
+if (filter_items.length) {
+  filter_buttons.forEach((btn, index) => {
+    btn.onclick = () => {
+      filter_items.forEach((item, i) => {
+        if (i != index) {
+          item.classList.remove('active');
+        }
+        else {
+          item.classList.add('active');
+        }
+      })
+
+      filter_buttons.forEach((btn2, index2) => {
+        if (index2!= index) {
+          btn2.classList.remove('active');
+        } else {
+          btn2.classList.add('active');
+        }
+      })
+    }
+  })
+}

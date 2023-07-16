@@ -184,14 +184,6 @@
         padding: 0 69px;
     }
 
-    @media only screen and (max-width: 1420px) {
-        .our_projects {
-            .mySwiper2 {
-                margin-left: 69px;
-            }
-        }
-    }
-
     .wrapper {
         .logo_footer {
             .logo_footerr {
@@ -226,6 +218,38 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+
+    .history {
+        #history_filter {
+            .filter_buttons_list {
+                padding: 0px;
+                margin-top: 0;
+                margin-bottom: 64px;
+            }
+
+            .filter_datas {
+                .filter_item {
+                    .filter_main_img {
+                        width: 100%;
+                        margin-top: 64px;
+                    }
+
+                    .body_description {
+                        max-width: 100%;
+                    }
+
+                    .filter_item_foot {
+                        max-width: 100%;
+                    }
+                }
+
+                .active {
+                    display: flex;
+                    flex-direction: column-reverse;
                 }
             }
         }
@@ -354,6 +378,73 @@
 
             .swiper-button-prev {
                 left: 42px;
+            }
+        }
+    }
+
+    .history {
+        #history_filter {
+            .filter_datas {
+                .filter_item {
+                    .filter_main_img {
+                        height: 376px;
+                        object-fit: cover;
+                    }
+
+                    .h3 {
+                        color: #4A4A4A;
+                        font-family: "Manrope", sans-serif;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 32px;
+                    }
+
+                    .body_description {
+                        color: #4A4A4A;
+                        font-family: "Manrope", sans-serif;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+
+                    .filter_item_foot {
+                        img {
+                            width: 63.047px;
+                            height: 48px;
+                        }
+
+                        .text {
+                            .description {
+                                color: #4A4A4A;
+                                font-family: "Manrope", sans-serif;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 24px;
+                            }
+
+                            h4 {
+                                color: #4A4A4A;
+                                font-family: "Manrope", sans-serif;
+                                font-size: 22px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 28px;
+                            }
+
+                            .author {
+                                color: #9B9B9B;
+                                font-family: "Manrope", sans-serif;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 21px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

@@ -2395,6 +2395,137 @@ header .bars {
   margin: 64px 0 104px 0;
 }
 
+.history #history_home .head_link_wrapper .head_link {
+  padding: 104px 0 64px;
+  display: flex;
+  gap: 24px;
+}
+.history #history_home .head_link_wrapper .head_link a {
+  color: #4A4A4A;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  border-bottom: 1px solid #4A4A4A;
+}
+.history #history_home .head_link_wrapper .head_link .current_page {
+  border-bottom: none;
+  color: #9B9B9B;
+}
+.history #history_home .head_link_wrapper .page_title {
+  color: #4A4A4A;
+  font-family: "Manrope", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 64px;
+}
+@media screen and (max-width: 768px) {
+  .history #history_home .head_link_wrapper .page_title {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+  }
+}
+.history #history_filter {
+  margin-bottom: 104px;
+}
+.history #history_filter .filter_datas .filter_item {
+  display: none;
+}
+.history #history_filter .filter_datas .filter_item .filter_main_img {
+  width: 636px;
+  height: 520px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  margin-bottom: 64px;
+}
+.history #history_filter .filter_datas .filter_item h3 {
+  color: #4A4A4A;
+  font-family: "Manrope", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+.history #history_filter .filter_datas .filter_item .body_description {
+  color: #4A4A4A;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 40px;
+  max-width: 636px;
+}
+.history #history_filter .filter_datas .filter_item .filter_item_foot {
+  max-width: 636px;
+  display: flex;
+  align-items: flex-start;
+  gap: 69px;
+}
+.history #history_filter .filter_datas .filter_item .filter_item_foot .text .description {
+  color: #4A4A4A;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.history #history_filter .filter_datas .filter_item .filter_item_foot .text h4 {
+  color: #4A4A4A;
+  font-family: "Manrope", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 8px;
+}
+.history #history_filter .filter_datas .filter_item .filter_item_foot .text .author {
+  color: #9B9B9B;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+.history #history_filter .filter_datas .active {
+  display: block;
+}
+.history #history_filter .filter_buttons_list {
+  margin-top: 162px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 64px 0;
+  border-right: 1px solid rgba(16, 16, 16, 0.1);
+  background: #F8F8F8;
+}
+.history #history_filter .filter_buttons_list button {
+  display: block;
+  width: 100%;
+  outline: none;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(16, 16, 16, 0.1);
+  color: #4A4A4A;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  padding: 16px 40px;
+}
+.history #history_filter .filter_buttons_list .active {
+  background: #01A73F;
+  color: white;
+}
+
 @media only screen and (max-width: 1750px) {
   .our_projects .mySwiper2 {
     margin-left: 12.5%;
@@ -2530,13 +2661,6 @@ header .bars {
   .container {
     padding: 0 69px;
   }
-}
-@media only screen and (max-width: 992px) and (max-width: 1420px) {
-  .our_projects .mySwiper2 {
-    margin-left: 69px;
-  }
-}
-@media only screen and (max-width: 992px) {
   .wrapper .logo_footer .logo_footerr {
     margin-bottom: 0px;
   }
@@ -2559,6 +2683,25 @@ header .bars {
   }
   .wrapper .contacts_wrapper .contacts_comments .contacts_comments_wrapper .contacts_right .contacts_right_contact .contacts_right_check p {
     max-width: 311px;
+  }
+  .history #history_filter .filter_buttons_list {
+    padding: 0px;
+    margin-top: 0;
+    margin-bottom: 64px;
+  }
+  .history #history_filter .filter_datas .filter_item .filter_main_img {
+    width: 100%;
+    margin-top: 64px;
+  }
+  .history #history_filter .filter_datas .filter_item .body_description {
+    max-width: 100%;
+  }
+  .history #history_filter .filter_datas .filter_item .filter_item_foot {
+    max-width: 100%;
+  }
+  .history #history_filter .filter_datas .active {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -2644,6 +2787,55 @@ header .bars {
   }
   .hero_section .mySwiper .swiper-button-prev {
     left: 42px;
+  }
+  .history #history_filter .filter_datas .filter_item .filter_main_img {
+    height: 376px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .history #history_filter .filter_datas .filter_item .h3 {
+    color: #4A4A4A;
+    font-family: "Manrope", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+  }
+  .history #history_filter .filter_datas .filter_item .body_description {
+    color: #4A4A4A;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .history #history_filter .filter_datas .filter_item .filter_item_foot img {
+    width: 63.047px;
+    height: 48px;
+  }
+  .history #history_filter .filter_datas .filter_item .filter_item_foot .text .description {
+    color: #4A4A4A;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .history #history_filter .filter_datas .filter_item .filter_item_foot .text h4 {
+    color: #4A4A4A;
+    font-family: "Manrope", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  .history #history_filter .filter_datas .filter_item .filter_item_foot .text .author {
+    color: #9B9B9B;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
   }
 }
 @media only screen and (max-width: 600px) {
