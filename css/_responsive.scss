@@ -204,6 +204,31 @@
                 }
             }
         }
+        .contact_map_media{
+            margin-top: 64px;
+            display: block;
+            margin-bottom: 104px;
+        }
+        .contacts_map{
+            display: none;
+        }
+        .contacts_wrapper{
+            .contacts_comments{
+                .contacts_comments_wrapper{
+                    flex-direction: column;
+                    .contacts_right{
+                        max-width: 351px;
+                        .contacts_right_contact{
+                            .contacts_right_check{
+                                p{
+                                    max-width: 311px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -346,7 +371,14 @@
 
             .poiner_media_share {
                 display: block;
-
+            }
+        }
+        .contact_map_media{
+            margin-top: 64px;
+            display: block;
+            margin-bottom: 104px;
+            iframe{
+                height: 500px;
                 .poiner_media_share_btn {}
             }
         }
