@@ -94,3 +94,26 @@ const sliderImages = new Swiper('.slider__images .swiper-container', { // ище
 		}
 	}
 });
+
+const img_calculation = document.querySelectorAll('.img_calculation');
+
+if (img_calculation.length) {
+  img_calculation.forEach(item => {
+    const slect_img = item.querySelector('.selected_img img')
+    const img_list = item.querySelectorAll('.img_list img');
+
+    img_list.forEach(img => {
+      img.onclick = () => {
+        slect_img.setAttribute('src', img.getAttribute('src'));
+
+        img_list.forEach(image => {
+          if (image != img) {
+            image.classList.remove('active');
+          }
+        })
+
+        img.classList.add('active');
+      }
+    })
+  })
+}
