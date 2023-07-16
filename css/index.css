@@ -2526,6 +2526,86 @@ header .bars {
   color: white;
 }
 
+.faq #faq_home .head_link_wrapper .head_link {
+  padding: 104px 0 64px;
+  display: flex;
+  gap: 24px;
+}
+.faq #faq_home .head_link_wrapper .head_link a {
+  color: #4A4A4A;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  border-bottom: 1px solid #4A4A4A;
+}
+.faq #faq_home .head_link_wrapper .head_link .current_page {
+  border-bottom: none;
+  color: #9B9B9B;
+}
+.faq #faq_home .head_link_wrapper .page_title {
+  color: #4A4A4A;
+  font-family: "Manrope", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 64px;
+}
+@media screen and (max-width: 768px) {
+  .faq #faq_home .head_link_wrapper .page_title {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+  }
+}
+.faq #faq_accardion .accordion {
+  margin-bottom: 104px;
+}
+.faq #faq_accardion .accordion .accordion-item .accordion-header .accordion-button {
+  color: #9B9B9B !important;
+  font-family: "Manrope", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 64px;
+  padding-left: 0;
+}
+.faq #faq_accardion .accordion .accordion-item .accordion-header .accordion-button::after {
+  transform: translateX(64px);
+}
+.faq #faq_accardion .accordion .accordion-item .accordion-header .collapsed {
+  color: #4A4A4A !important;
+  font-family: "Manrope", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+.faq #faq_accardion .accordion .accordion-item .accordion-collapse {
+  padding-right: 64px;
+}
+.faq #faq_accardion .accordion .accordion-item .accordion-collapse .datas {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  padding-left: 5px;
+  color: #4A4A4A;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.faq #faq_accardion .accordion .accordion-item .accordion-collapse .text_foot {
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
 @media only screen and (max-width: 1750px) {
   .our_projects .mySwiper2 {
     margin-left: 12.5%;
