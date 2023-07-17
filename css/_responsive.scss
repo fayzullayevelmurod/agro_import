@@ -184,14 +184,6 @@
         padding: 0 69px;
     }
 
-    @media only screen and (max-width: 1420px) {
-        .our_projects {
-            .mySwiper2 {
-                margin-left: 69px;
-            }
-        }
-    }
-
     .wrapper {
         .logo_footer {
             .logo_footerr {
@@ -204,23 +196,28 @@
                 }
             }
         }
-        .contact_map_media{
+
+        .contact_map_media {
             margin-top: 64px;
             display: block;
             margin-bottom: 104px;
         }
-        .contacts_map{
+
+        .contacts_map {
             display: none;
         }
-        .contacts_wrapper{
-            .contacts_comments{
-                .contacts_comments_wrapper{
+
+        .contacts_wrapper {
+            .contacts_comments {
+                .contacts_comments_wrapper {
                     flex-direction: column;
-                    .contacts_right{
+
+                    .contacts_right {
                         max-width: 351px;
-                        .contacts_right_contact{
-                            .contacts_right_check{
-                                p{
+
+                        .contacts_right_contact {
+                            .contacts_right_check {
+                                p {
                                     max-width: 311px;
                                 }
                             }
@@ -259,6 +256,47 @@
         }
     }
 
+    .counter_section {
+        .working {
+            .working_cards {
+                .working_card {
+                    padding-bottom: 40px;
+                }
+            }
+        }
+    }
+}
+
+.history {
+    #history_filter {
+        .filter_buttons_list {
+            padding: 0px;
+            margin-top: 0;
+            margin-bottom: 64px;
+        }
+
+        .filter_datas {
+            .filter_item {
+                .filter_main_img {
+                    width: 100%;
+                    margin-top: 64px;
+                }
+
+                .body_description {
+                    max-width: 100%;
+                }
+
+                .filter_item_foot {
+                    max-width: 100%;
+                }
+            }
+
+            .active {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+    }
 
 }
 
@@ -388,6 +426,156 @@
         }
     }
 
+    .counter_section {
+        .item_counter {
+            .counter_num {
+                h3 {
+                    font-size: 96px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 96px;
+                }
+
+                p {
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 32px;
+                }
+            }
+        }
+
+        .client_contact {
+            .contacts_left {
+                width: 100%;
+
+                .contacts_right_contact {
+                    .contacts_right_check {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .contacts_right_contact_btn {
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .working {
+            .working_cards {
+                .working_card {
+                    .working_card_title {
+                        h4 {
+                            margin-left: 0;
+                            color: var(--color-base, #4A65C3);
+                        }
+
+                        h3 {
+                            margin-left: 10px;
+                            font-size: 22px;
+                            line-height: 28px;
+                        }
+                    }
+
+                    p {
+                        margin-left: 35px;
+                    }
+                }
+
+                .working_card::after {
+                    display: none;
+                }
+            }
+        }
+
+        .logistic {
+            margin: 0 0 64px 0;
+
+            .logistic_title {
+                h3 {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+            }
+        }
+
+        .service {
+            .service_title {
+                h3 {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+
+    .history {
+        #history_filter {
+            .filter_datas {
+                .filter_item {
+                    .filter_main_img {
+                        height: 376px;
+                        object-fit: cover;
+                    }
+
+                    .h3 {
+                        color: #4A4A4A;
+                        font-family: "Manrope", sans-serif;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 32px;
+                    }
+
+                    .body_description {
+                        color: #4A4A4A;
+                        font-family: "Manrope", sans-serif;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+
+                    .filter_item_foot {
+                        img {
+                            width: 63.047px;
+                            height: 48px;
+                        }
+
+                        .text {
+                            .description {
+                                color: #4A4A4A;
+                                font-family: "Manrope", sans-serif;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 24px;
+                            }
+
+                            h4 {
+                                color: #4A4A4A;
+                                font-family: "Manrope", sans-serif;
+                                font-size: 22px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 28px;
+                            }
+
+                            .author {
+                                color: #9B9B9B;
+                                font-family: "Manrope", sans-serif;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 21px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -403,12 +591,15 @@
                 display: block;
             }
         }
-        .contact_map_media{
+
+        .contact_map_media {
             margin-top: 64px;
             display: block;
             margin-bottom: 104px;
-            iframe{
+
+            iframe {
                 height: 500px;
+
                 .poiner_media_share_btn {}
             }
         }
@@ -449,6 +640,22 @@
     .mobile_menu {
         .mobile_logo {
             height: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 535px) {
+    .client_contact {
+        .contacts_left {
+            width: 100%;
+
+            .contacts_right_contact {
+                .contacts_right_check {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                }
+            }
         }
     }
 }
