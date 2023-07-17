@@ -278,6 +278,89 @@
                 }
             }
         }
+        .item_counter{
+            .counter_num{
+                h3{
+                    font-size: 96px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 96px;
+                }
+            }
+        }
+    }
+    .about_hero{
+        .block_hero_group{
+            .img_cow{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 104px;
+                img{
+                    margin-bottom: 64px;
+                }
+                p{
+                    bottom: -64px;
+                }
+            }
+            .block_heroo{
+                .button_hero{
+                    a{
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .our_products{
+        .item_first{
+            background-size: cover;
+            p{
+                margin-bottom: 196px;
+            }
+        } 
+        .item_second{
+            background-size: cover;
+            padding: 40px 0 238px 40px;
+        }
+        .item_three{
+            background-size: cover;
+            padding: 40px 0 238px 40px;
+        }
+        .item_four{
+            background-size: cover;
+            padding: 40px 0 238px 40px;
+        }
+        .item_five{
+            background-size: cover;
+            padding: 40px 0 238px 40px;
+        }
+        .item_six {
+            background-size: cover;
+            padding: 40px 0 238px 40px;
+        }
+    }    
+    .comment_block{
+        .contact_us_block{
+            flex-direction: column;
+            .reviews{
+                .btn_more_media{
+                    display: flex;
+                    justify-content: center;
+                    a{
+                        white-space: nowrap;
+                        color: var(--color-base-text, #4a4a4a);
+                        text-align: center;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        padding: 16px;
+                        border-radius: 64px;
+                        border: 1px solid var(--color-base-text, #4a4a4a);
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -601,7 +684,22 @@
         }
     }
 }
-
+@media only screen and (max-width: 650px) {
+    .about_hero{
+        .block_hero_group{
+            .block_heroo{
+                .button_hero{
+                    width: 600px;
+                    padding-right: 100px;
+                    overflow-y: hidden;
+                    overflow-x: auto;
+                    white-space: nowrap;
+                    -webkit-overflow-scrolling: touch;
+                }
+            }
+        }
+    }
+}
 @media only screen and (max-width: 600px) {
     .wrapper {
         .poiner_wrapper {

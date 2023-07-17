@@ -444,6 +444,7 @@ header {
 
         .button_projects {
             a {
+                white-space: nowrap;
                 color: var(--color-base-text, #4a4a4a);
                 text-align: center;
                 font-size: 16px;
@@ -578,7 +579,9 @@ header {
     .contact_us_block {
         display: flex;
         justify-content: space-between;
-
+        .reviews{
+            max-width: 746px;
+        }
         .reviews_item {
             margin-bottom: 40px;
         }
@@ -1759,8 +1762,6 @@ header {
 
         .button_hero {
             margin-top: 64px;
-            width: 656px;
-
             a {
                 color: var(--color-white, #fff);
                 text-align: center;
@@ -1794,6 +1795,11 @@ header {
             /* 100% */
         }
     }
+    .contact_us{
+        .contact_us_block{
+             
+        }
+    }
 }
 
 .our_awards2 {
@@ -1816,7 +1822,7 @@ header {
     }
 
     .contact_us_block {
-        gap: 185px;
+        gap: 5px;
     }
 
     form {
