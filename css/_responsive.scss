@@ -230,6 +230,36 @@
             }
         }
     }
+    .kravta_production{
+        .title_info{
+            flex-direction: column;
+            h3{
+                max-width: 100%;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;
+                margin-bottom: 40px;
+            }
+            p{
+                max-width: 100%;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }
+        .hero_sec_b{
+            padding: 60px 40px;
+        }
+    }
+    .product_group{
+        .item_product{
+            border: 1px solid var(--color-base-text-shift-down-2, #9B9B9B);
+        }
+    }
+
+
 }
 
 @media only screen and (max-width: 768px) {

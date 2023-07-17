@@ -965,9 +965,11 @@ header .bars {
   font-style: normal;
   font-weight: 400;
   line-height: 48px;
+  max-width: 856px;
   /* 150% */
 }
 .kravta_production .title_info p {
+  max-width: 416px;
   color: var(--color-base-text, #4a4a4a);
   font-size: 16px;
   font-style: normal;
@@ -995,11 +997,19 @@ header .bars {
   border: 1px solid var(--color-base-text, #4a4a4a);
 }
 .product_group .item_product {
+  min-height: 512px;
+  padding: 40px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-bottom: 80px;
 }
+.product_group .item_product img {
+  width: 100%;
+}
 .product_group .item_product .block_mor {
-  margin-bottom: 114px;
+  margin-bottom: auto;
 }
 .product_group .item_product h3 {
   color: var(--color-base-text, #4a4a4a);
@@ -1010,7 +1020,7 @@ header .bars {
   margin-top: 34px;
   line-height: 32px;
   /* 114.286% */
-  margin-bottom: 34px;
+  margin-bottom: auto;
 }
 .product_group .item_product p {
   color: var(--color-base-text-shift-down-2, #9b9b9b);
@@ -1024,6 +1034,10 @@ header .bars {
   margin-bottom: 34px;
 }
 .product_group .item_product a {
+  margin: 0 auto;
+  width: 90px;
+  display: block;
+  margin-top: auto;
   color: var(--color-base-text, #4a4a4a);
   font-size: 16px;
   border-bottom: 1px solid var(--color-base-text, #4a4a4a);
@@ -2559,6 +2573,34 @@ header .bars {
   }
   .wrapper .contacts_wrapper .contacts_comments .contacts_comments_wrapper .contacts_right .contacts_right_contact .contacts_right_check p {
     max-width: 311px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .kravta_production .title_info {
+    flex-direction: column;
+  }
+  .kravta_production .title_info h3 {
+    max-width: 100%;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 40px;
+  }
+  .kravta_production .title_info p {
+    max-width: 100%;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .kravta_production .hero_sec_b {
+    padding: 60px 40px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .product_group .item_product {
+    border: 1px solid var(--color-base-text-shift-down-2, #9B9B9B);
   }
 }
 @media only screen and (max-width: 768px) {

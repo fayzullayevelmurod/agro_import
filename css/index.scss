@@ -1114,10 +1114,12 @@ header {
             font-style: normal;
             font-weight: 400;
             line-height: 48px;
+            max-width: 856px;
             /* 150% */
         }
 
         p {
+            max-width: 416px;
             color: var(--color-base-text, #4a4a4a);
             font-size: 16px;
             font-style: normal;
@@ -1149,11 +1151,18 @@ header {
     }
 
     .item_product {
+        min-height: 512px;
+        padding: 40px;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         margin-bottom: 80px;
-
+        img{
+            width: 100%;
+        }
         .block_mor {
-            margin-bottom: 114px;
+            margin-bottom: auto;
         }
 
         h3 {
@@ -1165,7 +1174,7 @@ header {
             margin-top: 34px;
             line-height: 32px;
             /* 114.286% */
-            margin-bottom: 34px;
+            margin-bottom: auto;
         }
 
         p {
@@ -1181,6 +1190,10 @@ header {
         }
 
         a {
+            margin: 0 auto;
+            width: 90px;
+            display: block;
+            margin-top: auto;
             color: var(--color-base-text, #4a4a4a);
             font-size: 16px;
             border-bottom: 1px solid var(--color-base-text, #4a4a4a);
