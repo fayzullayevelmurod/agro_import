@@ -240,9 +240,7 @@
         }
     }
 }
-
 @media only screen and (max-width: 768px) {
-
     .container,
     .container-lg,
     .container-md,
@@ -251,27 +249,22 @@
         max-width: 1300px;
         padding: 0 42px;
     }
-
     .container-fluid {
         width: 1500px;
         text-align: center;
     }
-
     .our_projects {
         .title_projects {
             .button_projects {
                 display: none;
             }
         }
-
         .mySwiper2 {
             margin-left: 42px;
         }
-
         .mobile_button_projects {
             padding: 0 42px;
             margin-top: 64px;
-
             a {
                 color: #4A4A4A;
                 text-align: center;
@@ -286,12 +279,10 @@
             }
         }
     }
-
     .mobile_menu {
         .mobile_logo {
             height: 48px;
         }
-
         .link_item {
             .number {
                 display: none;
@@ -320,7 +311,6 @@
             }
         }
     }
-
     .wrapper {
         .logo_footer {
             .footer_wrapper_in {
@@ -338,7 +328,6 @@
             }
         }
     }
-
     .hero_section {
         .mySwiper {
             height: 416px;
