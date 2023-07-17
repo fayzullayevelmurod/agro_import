@@ -2613,10 +2613,12 @@ header {
                     font-weight: 400;
                     line-height: 28px;
                     margin-bottom: 25px;
+                    display: block;
                 }
                 .right_contact_input{
+                    width: 306px;
                     margin-bottom: 40px;
-                    width: 100%;
+                    // width: 100%;
                     border: none;
                     padding: 8px 0;
                     border-bottom: 1px solid var(--color-base-text, #4A4A4A);
@@ -2645,48 +2647,175 @@ header {
                 }
                 .contacts_right_check{
                     display: flex;
-
-                    .contacts_right_check_input{ 
-                        margin-left: 0;
-                        border: 1px solid red; 
-                        display: block;
-                        width: 24px;
-                        height: 24px;
-                        accent-color: #01A73F;
-                        border: 1px solid var(--color-base-text-shift-down-2, #9B9B9B);
+                    justify-content: space-between;
+                    .contacts_right_contact_btn{
+                        button{
+                            background-color: transparent;
+                            color: var(--color-base-text, #4A4A4A);
+                            padding: 16px;
+                            text-align: center;
+                            font-family: 'Manrope',sans-serif;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 24px;
+                            border-radius: 64px;
+                            border: 1px solid var(--color-base-text, #4A4A4A);
+                        }
                     }
-                    p{
-                        max-width: 331px;
-                        margin-left: 16px;
-                        color: var(--color-base-text, #4A4A4A);
-                        font-family: 'Manrope',sans-serif;
-                        font-size: 16px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 24px;
-                        span{
-                            text-decoration-line: underline;
-                        } 
-                    }
-                }
-                .contacts_right_contact_btn{
-                    button{
-                        background-color: transparent;
-                        color: var(--color-base-text, #4A4A4A);
-                        padding: 16px;
-                        text-align: center;
-                        font-family: 'Manrope',sans-serif;
-                        font-size: 16px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 24px;
-                        border-radius: 64px;
-                        border: 1px solid var(--color-base-text, #4A4A4A);
+                    .contacts_right_check_inputs{
+                        display: flex;
+                        .contacts_right_check_input{ 
+                            margin-left: 0;
+                            border: 1px solid red; 
+                            display: block;
+                            width: 24px;
+                            height: 24px;
+                            accent-color: #01A73F;
+                            border: 1px solid var(--color-base-text-shift-down-2, #9B9B9B);
+                        }
+                        p{
+                            max-width: 331px;
+                            margin-left: 16px;
+                            color: var(--color-base-text, #4A4A4A);
+                            font-family: 'Manrope',sans-serif;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 24px;
+                            span{
+                                text-decoration-line: underline;
+                            } 
+                        }
                     }
                 }
             }
         }
     }
+    .working{
+        background: var(--color-base-text-shift-down, #F8F8F8);
+        .working_title{
+            margin-bottom: 64px;
+            h3{
+                color: var(--color-base-text, #4A4A4A);
+                font-family: 'Manrope',sans-serif;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 32px;
+            }
+        }
+        .working_cards{
+            .working_card{
+                position: relative;
+                .working_card_title{
+                    display: flex;
+                    align-items: start;
+                    margin-bottom: 40px;
+                    h4{
+                        margin-left: 16px;
+                        // margin-right: 20px;
+                        color: var(--color-base-text, #4A4A4A);
+                        font-family: 'Manrope',sans-serif;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 30px;
+                    }
+                    h3{
+                        margin-left: 30px;
+                        color: var(--color-base-text, #4A4A4A);
+                        font-family: 'Manrope',sans-serif;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 32px;
+                    }
+                }
+                p{
+                    margin-left: 64px;
+                    color: var(--color-base-text, #4A4A4A);
+                    font-family: Manrope;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
+            .working_card::after{
+                content: '';
+                width: 1px;
+                height: 144px;
+                background-color: var(--color-base-text, #4A4A4A);;
+                position: absolute;
+                left: 15px;
+                top: 0;
+            }
+        }
+    }
+    .logistic{
+        margin: 64px 0;
+        .logistic_title{
+            margin-bottom: 40px;
+            h3{
+                color: var(--color-base-text, #4A4A4A);
+                font-family: Manrope;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 32px;
+            }
+        }
+        p{
+            max-width: 746px;
+            color: var(--color-base-text, #4A4A4A);
+            font-family: Manrope;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            margin-bottom: 15px;
+        }
+        .logist_img{
+            margin-top: 25px;
+            max-width: 966px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .service{
+        margin-bottom: 104px;
+        .service_title{
+            margin-bottom: 40px;
+            h3{
+                color: var(--color-base-text, #4A4A4A);
+                font-family: Manrope;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 32px;
+            }
+        }
+        p{
+            max-width: 746px;
+            color: var(--color-base-text, #4A4A4A);
+            font-family: Manrope;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            margin-bottom: 15px;
+        }
+        .service_img{
+            margin-top: 25px;
+            max-width: 966px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    
 }
 
 @import './responsive';

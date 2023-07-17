@@ -230,6 +230,15 @@
             }
         }
     }
+    .counter_section{
+        .working{
+            .working_cards{
+                .working_card{
+                    padding-bottom: 40px;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -374,8 +383,61 @@
                 }
             }
         }
+        .client_contact{
+            .contacts_left{
+                width: 100%;
+                .contacts_right_contact {
+                    .contacts_right_check{
+                        display: flex;
+                        justify-content: space-between;
+                        .contacts_right_contact_btn{
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+            }
+        } 
+        .working{
+            .working_cards{
+                .working_card{
+                    .working_card_title{
+                        h4{
+                            margin-left: 0;
+                            color: var(--color-base, #4A65C3);
+                        }
+                        h3{
+                            margin-left: 10px;
+                            font-size: 22px;
+                            line-height: 28px;
+                        }
+                    }
+                    p{
+                        margin-left: 35px;
+                    }
+                }
+                .working_card::after{
+                    display: none;
+                }
+            }
+        }
+        .logistic{
+            margin: 0 0 64px 0;
+            .logistic_title{
+                h3{
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+            }
+        }
+        .service{
+            .service_title{
+                h3{
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+            }
+        }
     }
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -439,6 +501,21 @@
             height: 30px;
         }
     }
+}
+
+@media only screen and (max-width: 535px){
+    .client_contact{
+        .contacts_left{
+            width: 100%;
+            .contacts_right_contact {
+                .contacts_right_check{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                }
+            }
+        }
+    } 
 }
 
 @media only screen and (max-width: 450px) {
