@@ -196,23 +196,28 @@
                 }
             }
         }
-        .contact_map_media{
+
+        .contact_map_media {
             margin-top: 64px;
             display: block;
             margin-bottom: 104px;
         }
-        .contacts_map{
+
+        .contacts_map {
             display: none;
         }
-        .contacts_wrapper{
-            .contacts_comments{
-                .contacts_comments_wrapper{
+
+        .contacts_wrapper {
+            .contacts_comments {
+                .contacts_comments_wrapper {
                     flex-direction: column;
-                    .contacts_right{
+
+                    .contacts_right {
                         max-width: 351px;
-                        .contacts_right_contact{
-                            .contacts_right_check{
-                                p{
+
+                        .contacts_right_contact {
+                            .contacts_right_check {
+                                p {
                                     max-width: 311px;
                                 }
                             }
@@ -222,10 +227,11 @@
             }
         }
     }
-    .counter_section{
-        .working{
-            .working_cards{
-                .working_card{
+
+    .counter_section {
+        .working {
+            .working_cards {
+                .working_card {
                     padding-bottom: 40px;
                 }
             }
@@ -233,39 +239,40 @@
     }
 }
 
-    .history {
-        #history_filter {
-            .filter_buttons_list {
-                padding: 0px;
-                margin-top: 0;
-                margin-bottom: 64px;
+.history {
+    #history_filter {
+        .filter_buttons_list {
+            padding: 0px;
+            margin-top: 0;
+            margin-bottom: 64px;
+        }
+
+        .filter_datas {
+            .filter_item {
+                .filter_main_img {
+                    width: 100%;
+                    margin-top: 64px;
+                }
+
+                .body_description {
+                    max-width: 100%;
+                }
+
+                .filter_item_foot {
+                    max-width: 100%;
+                }
             }
 
-            .filter_datas {
-                .filter_item {
-                    .filter_main_img {
-                        width: 100%;
-                        margin-top: 64px;
-                    }
-
-                    .body_description {
-                        max-width: 100%;
-                    }
-
-                    .filter_item_foot {
-                        max-width: 100%;
-                    }
-                }
-
-                .active {
-                    display: flex;
-                    flex-direction: column-reverse;
-                }
+            .active {
+                display: flex;
+                flex-direction: column-reverse;
             }
         }
     }
 }
+
 @media only screen and (max-width: 768px) {
+
     .container,
     .container-lg,
     .container-md,
@@ -274,22 +281,27 @@
         max-width: 1300px;
         padding: 0 42px;
     }
+
     .container-fluid {
         width: 1500px;
         text-align: center;
     }
+
     .our_projects {
         .title_projects {
             .button_projects {
                 display: none;
             }
         }
+
         .mySwiper2 {
             margin-left: 42px;
         }
+
         .mobile_button_projects {
             padding: 0 42px;
             margin-top: 64px;
+
             a {
                 color: #4A4A4A;
                 text-align: center;
@@ -304,10 +316,12 @@
             }
         }
     }
+
     .mobile_menu {
         .mobile_logo {
             height: 48px;
         }
+
         .link_item {
             .number {
                 display: none;
@@ -336,6 +350,7 @@
             }
         }
     }
+
     .wrapper {
         .logo_footer {
             .footer_wrapper_in {
@@ -353,6 +368,7 @@
             }
         }
     }
+
     .hero_section {
         .mySwiper {
             height: 416px;
@@ -380,16 +396,18 @@
             }
         }
     }
+
     .counter_section {
-        .item_counter{
-            .counter_num{
-                h3{
+        .item_counter {
+            .counter_num {
+                h3 {
                     font-size: 96px;
                     font-style: normal;
                     font-weight: 500;
                     line-height: 96px;
                 }
-                p{
+
+                p {
                     font-size: 24px;
                     font-style: normal;
                     font-weight: 400;
@@ -397,55 +415,65 @@
                 }
             }
         }
-        .client_contact{
-            .contacts_left{
+
+        .client_contact {
+            .contacts_left {
                 width: 100%;
+
                 .contacts_right_contact {
-                    .contacts_right_check{
+                    .contacts_right_check {
                         display: flex;
                         justify-content: space-between;
-                        .contacts_right_contact_btn{
+
+                        .contacts_right_contact_btn {
                             margin-bottom: 15px;
                         }
                     }
                 }
             }
-        } 
-        .working{
-            .working_cards{
-                .working_card{
-                    .working_card_title{
-                        h4{
+        }
+
+        .working {
+            .working_cards {
+                .working_card {
+                    .working_card_title {
+                        h4 {
                             margin-left: 0;
                             color: var(--color-base, #4A65C3);
                         }
-                        h3{
+
+                        h3 {
                             margin-left: 10px;
                             font-size: 22px;
                             line-height: 28px;
                         }
                     }
-                    p{
+
+                    p {
                         margin-left: 35px;
                     }
                 }
-                .working_card::after{
+
+                .working_card::after {
                     display: none;
                 }
             }
         }
-        .logistic{
+
+        .logistic {
             margin: 0 0 64px 0;
-            .logistic_title{
-                h3{
+
+            .logistic_title {
+                h3 {
                     font-size: 24px;
                     line-height: 32px;
                 }
             }
         }
-        .service{
-            .service_title{
-                h3{
+
+        .service {
+            .service_title {
+                h3 {
                     font-size: 24px;
                     line-height: 32px;
                 }
@@ -534,12 +562,15 @@
                 display: block;
             }
         }
-        .contact_map_media{
+
+        .contact_map_media {
             margin-top: 64px;
             display: block;
             margin-bottom: 104px;
-            iframe{
+
+            iframe {
                 height: 500px;
+
                 .poiner_media_share_btn {}
             }
         }
@@ -584,19 +615,20 @@
     }
 }
 
-@media only screen and (max-width: 535px){
-    .client_contact{
-        .contacts_left{
+@media only screen and (max-width: 535px) {
+    .client_contact {
+        .contacts_left {
             width: 100%;
+
             .contacts_right_contact {
-                .contacts_right_check{
+                .contacts_right_check {
                     display: flex;
                     justify-content: space-between;
                     flex-direction: column;
                 }
             }
         }
-    } 
+    }
 }
 
 @media only screen and (max-width: 450px) {
