@@ -248,6 +248,20 @@
         }
         .hero_sec_b{
             padding: 60px 40px;
+            .hero_sec_header_top{
+                display: flex;
+            }
+            .bottom_hero{
+                display: flex;
+                justify-content: center;
+                a{
+                    display: flex;
+                    align-items: center;
+                }
+                .bottom_hero_img{
+                    display: none;
+                }
+            }
         }
     }
     .product_group{
@@ -573,6 +587,16 @@
                         }
                     }
                 }
+            }
+        }
+    }
+    .kravta_production{
+        .hero_sec_b{
+            h3{
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;
             }
         }
     }

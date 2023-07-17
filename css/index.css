@@ -917,6 +917,10 @@ header .bars {
   background: var(--kravta, #00437f);
   padding: 121px 220px 36px 220px;
 }
+.kravta_production .hero_sec_b .hero_sec_header_top {
+  display: none;
+  justify-content: end;
+}
 .kravta_production .hero_sec_b a {
   color: var(--color-white, #fff);
   font-size: 16px;
@@ -3025,6 +3029,20 @@ header .bars {
   .kravta_production .hero_sec_b {
     padding: 60px 40px;
   }
+  .kravta_production .hero_sec_b .hero_sec_header_top {
+    display: flex;
+  }
+  .kravta_production .hero_sec_b .bottom_hero {
+    display: flex;
+    justify-content: center;
+  }
+  .kravta_production .hero_sec_b .bottom_hero a {
+    display: flex;
+    align-items: center;
+  }
+  .kravta_production .hero_sec_b .bottom_hero .bottom_hero_img {
+    display: none;
+  }
   .product_group .item_product {
     border: 1px solid var(--color-base-text-shift-down-2, #9B9B9B);
   }
@@ -3232,6 +3250,12 @@ header .bars {
     font-style: normal;
     font-weight: 400;
     line-height: 21px;
+  }
+  .kravta_production .hero_sec_b h3 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
   }
 }
 @media only screen and (max-width: 600px) {

@@ -1059,7 +1059,10 @@ header {
     .hero_sec_b {
         background: var(--kravta, #00437f);
         padding: 121px 220px 36px 220px;
-
+        .hero_sec_header_top{
+            display: none;
+            justify-content: end;
+        }
         a {
             color: var(--color-white, #fff);
             font-size: 16px;
