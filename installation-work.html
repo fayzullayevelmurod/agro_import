@@ -16,7 +16,43 @@
 </head>
 
 <body>
-
+    <div class="order_form">
+        <div class="order_form-close">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M36 12L12 36M36 36L12 12" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </div>
+        <div class="title_conatcts">
+            <div class="title_c">
+                <h2>Свяжитесь с нами</h2>
+                <p>Оставьте свои контакты и мы перезвоним <br> вам в ближайшее время.</p>
+            </div>
+            <form action="">
+                <div class="form_control">
+                    <h3>Как к вам обращаться</h3>
+                    <input type="text" placeholder="Имя">
+                </div>
+                <div class="form_control">
+                    <h3>Как называется ваша <br> компания</h3>
+                    <input type="text" placeholder="Название компании">
+                </div>
+                <div class="form_control">
+                    <h3>Ваш номер телефона</h3>
+                    <input type="number" placeholder="Телефон">
+                </div>
+                <div class="btn_form_control">
+                    <div class="btn_f">
+                        <button class="main_link_btn">Отправить</button>
+                    </div>
+                    <div class="check_btn">
+                        <input role="button" type="checkbox">
+                        <p>Нажимая «Отправить», вы соглашаетесь <br> <span>с Политикой конфиденциальности
+                                <br> и обработкой персональных данных</span></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
     <div class="wrapper installation_work">
         <header>
             <div class="container">
@@ -28,11 +64,11 @@
                     <div class="contact_header">
                         <div class="phone">
                             <a class="first_phone" href="88002001122">8 800 200-11-22</a>
-                            <a href="#">Заказать звонок</a>
+                            <a class="main__form-btn main_link_hover" href="#">Заказать звонок</a>
                         </div>
                         <div class="search_header">
                             <input type="text" placeholder="Поиск по сайту">
-                            <a href="#">Личный кабинет</a>
+                            <a class="main_link_hover" href="#">Личный кабинет</a>
                         </div>
                     </div>
                     <button class="bars bg-transparent btn-outline-none border-0" type="button"
@@ -44,28 +80,27 @@
                 </div>
             </div>
         </header>
-
         <div class="menu_header">
             <div class="container-fluid">
                 <div class="menu_child">
                     <ul>
                         <li>
-                            <a href="#">О компании</a>
+                            <a class="main_link_hover header_link_main" href="#">О компании</a>
                         </li>
                         <li>
-                            <a href="#">Покупателям</a>
+                            <a class="main_link_hover header_link_main" href="#">Покупателям</a>
                         </li>
                         <li>
-                            <a href="#">Каталог</a>
+                            <a class="main_link_hover header_link_main" href="#">Каталог</a>
                         </li>
                         <li>
-                            <a href="#">Проекты</a>
+                            <a class="main_link_hover header_link_main" href="#">Проекты</a>
                         </li>
                         <li>
-                            <a href="#">Новости</a>
+                            <a class="main_link_hover header_link_main" href="#">Новости</a>
                         </li>
                         <li>
-                            <a href="#">Контакты</a>
+                            <a class="main_link_hover header_link_main" href="#">Контакты</a>
                         </li>
                     </ul>
                 </div>
@@ -82,13 +117,13 @@
                             <div class="links">
                                 <h3>О компании</h3>
                                 <div class="links_item">
-                                    <a href="#">История</a>
-                                    <a href="#">Сертификаты</a>
-                                    <a href="#">Благодарности</a>
-                                    <a href="#">Наша команда</a>
-                                    <a href="#">Отзывы</a>
-                                    <a href="#">Проекты</a>
-                                    <a href="#">Новости и статьи</a>
+                                    <a class="main_link_hover" href="#">История</a>
+                                    <a class="main_link_hover" href="#">Сертификаты</a>
+                                    <a class="main_link_hover" href="#">Благодарности</a>
+                                    <a class="main_link_hover" href="#">Наша команда</a>
+                                    <a class="main_link_hover" href="#">Отзывы</a>
+                                    <a class="main_link_hover" href="#">Проекты</a>
+                                    <a class="main_link_hover" href="#">Новости и статьи</a>
                                 </div>
                             </div>
                         </div>
@@ -99,13 +134,13 @@
                             <div class="links">
                                 <h3>Покупателям</h3>
                                 <div class="links_item">
-                                    <a href="#">Наши партнеры</a>
-                                    <a href="#">Сервисное обслуживание</a>
-                                    <a href="#">Склад и логистика</a>
-                                    <a href="#">Вопросы и ответы</a>
-                                    <a href="#">Гарантийное обслуживание</a>
-                                    <a href="#">Доставка и оплата</a>
-                                    <a href="#">Монтажные работы</a>
+                                    <a class="main_link_hover" href="#">Наши партнеры</a>
+                                    <a class="main_link_hover" href="#">Сервисное обслуживание</a>
+                                    <a class="main_link_hover" href="#">Склад и логистика</a>
+                                    <a class="main_link_hover" href="#">Вопросы и ответы</a>
+                                    <a class="main_link_hover" href="#">Гарантийное обслуживание</a>
+                                    <a class="main_link_hover" href="#">Доставка и оплата</a>
+                                    <a class="main_link_hover" href="#">Монтажные работы</a>
                                 </div>
                             </div>
                         </div>
@@ -116,14 +151,14 @@
                             <div class="links">
                                 <h3>Каталог</h3>
                                 <div class="links_item">
-                                    <a href="#">Системы автоматизации</a>
-                                    <a href="#">Системы управления стадом</a>
-                                    <a href="#">Автоматизация линейного молокопровода</a>
-                                    <a href="#">Вакуум</a>
-                                    <a href="#">Промывка доильного оборудования</a>
-                                    <a href="#">Индивидуальные агрегаты</a>
-                                    <a href="#">Оборудование для коз</a>
-                                    <a href="#">Сосковая резина</a>
+                                    <a class="main_link_hover" href="#">Системы автоматизации</a>
+                                    <a class="main_link_hover" href="#">Системы управления стадом</a>
+                                    <a class="main_link_hover" href="#">Автоматизация линейного молокопровода</a>
+                                    <a class="main_link_hover" href="#">Вакуум</a>
+                                    <a class="main_link_hover" href="#">Промывка доильного оборудования</a>
+                                    <a class="main_link_hover" href="#">Индивидуальные агрегаты</a>
+                                    <a class="main_link_hover" href="#">Оборудование для коз</a>
+                                    <a class="main_link_hover" href="#">Сосковая резина</a>
                                 </div>
                             </div>
                         </div>
@@ -134,8 +169,8 @@
                             <div class="links">
                                 <h3>Контакты</h3>
                                 <div class="links_item">
-                                    <a href="#">8 800 200-11-22</a>
-                                    <a href="#">vp@agrotehimport.ru</a>
+                                    <a class="main_link_hover" href="#">8 800 200-11-22</a>
+                                    <a class="main_link_hover" href="#">vp@agrotehimport.ru</a>
                                     <a href="#">600005, г. Владимир, ул. Александра Матросова, д. 1
                                         8:00–17:00 по будням</a>
                                 </div>
@@ -159,8 +194,8 @@
         <section id="installation_home">
             <div class="container head_link_wrapper">
                 <div class="head_link">
-                    <a href="./index.html">Главная</a>
-                    <a href="#">Покупателям</a>
+                    <a class="main_link_hover" href="./index.html">Главная</a>
+                    <a class="main_link_hover" href="#">Покупателям</a>
                     <a class="current_page">Каталог</a>
                 </div>
                 <h1 class="page_title">Монтажные работы</h1>
@@ -254,7 +289,7 @@
                             навозоудаления.</p>
                     </div>
                     <div class="button_projects">
-                        <a href="#">Смотреть все проекты</a>
+                        <a class="main_link_btn" href="#">Смотреть все проекты</a>
                     </div>
                 </div>
 
@@ -263,37 +298,37 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slid1">
                         <div class="btn_swipe">
-                            <a href="#">Подробнее</a>
+                            <a class="main_link_btn" href="#">Подробнее</a>
                         </div>
                     </div>
                     <div class="swiper-slide slid2">
                         <div class="btn_swipe">
-                            <a href="#">Подробнее</a>
+                            <a class="main_link_btn" href="#">Подробнее</a>
                         </div>
                     </div>
                     <div class="swiper-slide slid3">
                         <div class="btn_swipe">
-                            <a href="#">Подробнее</a>
+                            <a class="main_link_btn" href="#">Подробнее</a>
                         </div>
                     </div>
                     <div class="swiper-slide slid4">
                         <div class="btn_swipe">
-                            <a href="#">Подробнее</a>
+                            <a class="main_link_btn" href="#">Подробнее</a>
                         </div>
                     </div>
                     <div class="swiper-slide slid5">
                         <div class="btn_swipe">
-                            <a href="#">Подробнее</a>
+                            <a class="main_link_btn" href="#">Подробнее</a>
                         </div>
                     </div>
                     <div class="swiper-slide slid3">
                         <div class="btn_swipe">
-                            <a href="#">Подробнее</a>
+                            <a class="main_link_btn" href="#">Подробнее</a>
                         </div>
                     </div>
                     <div class="swiper-slide slid1">
                         <div class="btn_swipe">
-                            <a href="#">Подробнее</a>
+                            <a class="main_link_btn" href="#">Подробнее</a>
                         </div>
                     </div>
 
@@ -317,117 +352,118 @@
                 <div class="row footer_wrapper_in">
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xm-6">
                         <div class="menu_footer">
-                           <div class="title_top">
-                            <p class="footer_media_text">01</p>
-                            <h2>  О компании</h2>
-                           </div>
+                            <div class="title_top">
+                                <p class="footer_media_text">01</p>
+                                <h2> О компании</h2>
+                            </div>
                             <ul class="footer_media_list">
                                 <li>
-                                    <a href="#">История</a>
+                                    <a class="main_link_hover" href="#">История</a>
                                 </li>
                                 <li>
-                                    <a href="#">Сертификаты</a>
+                                    <a class="main_link_hover" href="#">Сертификаты</a>
                                 </li>
                                 <li>
-                                    <a href="#">Благодарности</a>
+                                    <a class="main_link_hover" href="#">Благодарности</a>
                                 </li>
                                 <li>
-                                    <a href="#">Наша команда</a>
+                                    <a class="main_link_hover" href="#">Наша команда</a>
                                 </li>
                                 <li>
-                                    <a href="#">Отзывы</a>
+                                    <a class="main_link_hover" href="#">Отзывы</a>
                                 </li>
                                 <li>
-                                    <a href="#">Проекты</a>
+                                    <a class="main_link_hover" href="#">Проекты</a>
                                 </li>
                                 <li>
-                                    <a href="#">Новости и статьи</a>
+                                    <a class="main_link_hover" href="#">Новости и статьи</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xm-6">
                         <div class="menu_footer">
-                           <div class="title_top">
-                            <p class="footer_media_text">02</p>
-                            <h2>  Покупателям</h2>
-                           </div>
+                            <div class="title_top">
+                                <p class="footer_media_text">02</p>
+                                <h2> Покупателям</h2>
+                            </div>
                             <ul class="footer_media_list">
                                 <li>
-                                    <a href="#">Наши партнеры</a>
+                                    <a class="main_link_hover" href="#">Наши партнеры</a>
                                 </li>
                                 <li>
-                                    <a href="#">Сервисное обслуживание</a>
+                                    <a class="main_link_hover" href="#">Сервисное обслуживание</a>
                                 </li>
                                 <li>
-                                    <a href="#">Склад и логистика</a>
+                                    <a class="main_link_hover" href="#">Склад и логистика</a>
                                 </li>
                                 <li>
-                                    <a href="#">Вопросы и ответы</a>
+                                    <a class="main_link_hover" href="#">Вопросы и ответы</a>
                                 </li>
                                 <li>
-                                    <a href="#">Гарантийное обслуживание</a>
+                                    <a class="main_link_hover" href="#">Гарантийное обслуживание</a>
                                 </li>
                                 <li>
-                                    <a href="#">Доставка и оплата</a>
+                                    <a class="main_link_hover" href="#">Доставка и оплата</a>
                                 </li>
                                 <li>
-                                    <a href="#">Монтажные работы</a>
+                                    <a class="main_link_hover" href="#">Монтажные работы</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xm-6">
                         <div class="menu_footer">
-                           <div class="title_top">
-                            <p class="footer_media_text">03</p>
-                            <h2>  Каталог</h2>
-                           </div>
+                            <div class="title_top">
+                                <p class="footer_media_text">03</p>
+                                <h2> Каталог</h2>
+                            </div>
                             <ul class="footer_media_list">
                                 <li>
-                                    <a href="#">Системы автоматизации</a>
+                                    <a class="main_link_hover" href="#">Системы автоматизации</a>
                                 </li>
                                 <li>
-                                    <a href="#">Системы управления стадом</a>
+                                    <a class="main_link_hover" href="#">Системы управления стадом</a>
                                 </li>
                                 <li>
-                                    <a href="#">Автоматизация линейного</a>
+                                    <a class="main_link_hover" href="#">Автоматизация линейного</a>
                                 </li>
                                 <li>
-                                    <a href="#">Вакуум</a>
+                                    <a class="main_link_hover" href="#">Вакуум</a>
                                 </li>
                                 <li>
-                                    <a href="#">Промывка доильного</a>
+                                    <a class="main_link_hover" href="#">Промывка доильного</a>
                                 </li>
                                 <li>
-                                    <a href="#">Индивидуальные агрегаты</a>
+                                    <a class="main_link_hover" href="#">Индивидуальные агрегаты</a>
                                 </li>
                                 <li>
-                                    <a href="#">Оборудование для коз</a>
+                                    <a class="main_link_hover" href="#">Оборудование для коз</a>
                                 </li>
                                 <li>
-                                    <a href="#">Сосковая резина</a>
+                                    <a class="main_link_hover" href="#">Сосковая резина</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xm-6">
                         <div class="menu_footer">
-                           <div class="title_top">
-                            <p class="footer_media_text">04</p>
-                            <h2>  Контакты</h2>
-                           </div>
+                            <div class="title_top">
+                                <p class="footer_media_text">04</p>
+                                <h2> Контакты</h2>
+                            </div>
                             <ul class="footer_media_list">
                                 <li>
-                                    <a class="add_no" href="#">8 800 200-11-22</a>
+                                    <a class="main_link_hover" class="add_no" href="#">8 800 200-11-22</a>
                                 </li>
                                 <li>
-                                    <a href="#">vp@agrotehimport.ru</a>
+                                    <a class="main_link_hover" href="#">vp@agrotehimport.ru</a>
                                 </li>
                                 <li>
-                                    <a class="add_no" href="#">600005, г. Владимир, ул. Александра Матросова, д. 1 8:00–17:00 по будням</a>
+                                    <a class="main_link_hover" class="add_no" href="#">600005, г. Владимир, ул. Александра Матросова, д. 1
+                                        8:00–17:00 по будням</a>
                                 </li>
-                                
+
                             </ul>
                         </div>
                     </div>

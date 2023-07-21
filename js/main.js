@@ -12,9 +12,23 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 var swiper = new Swiper(".mySwiper2", {
-  slidesPerView: 3,
-  spaceBetween: 30,
+  slidesPerView: 1.2,
+  spaceBetween: 12,
+  centeredSlides: false,
+  centeredSlidesBounds: false,
   loop: true,
+  breakpoints: {
+    840: {
+      slidesPerView: 2.8,
+    },
+    768: {
+      slidesPerView: 2.2,
+    },
+    450: {
+      slidesPerView: 1.6,
+      spaceBetween: 24,
+    }
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -26,36 +40,35 @@ var swiper = new Swiper(".mySwiper2", {
 });
 
 var swiper = new Swiper(".mySwiper3", {
-  slidesPerView: 3,
-  spaceBetween: 30,
+  slidesPerView: 1.1,
+  spaceBetween: 12,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
+    768: {
+      slidesPerView: 2.05,
+      spaceBetween: 24,
+    },
+    450: {
+      slidesPerView: 1.5,
+      spaceBetween: 24,
+    }
   },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
-  // breakpoints: {
-  //   600: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 20
-  //   },
-  //   // when window width is >= 480px
-  //   768: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 20
-  //   },
-  //   // when window width is >= 640px
-  //   992: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 30
-  //   }
-  // }
 });
+
 var swiper = new Swiper(".mySwiper4", {
-  slidesPerView: 4,
-  spaceBetween: 30,
+  slidesPerView: 1.5,
+  spaceBetween: 24,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -64,6 +77,20 @@ var swiper = new Swiper(".mySwiper4", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  breakpoints: {
+    1350: {
+      slidesPerView: 4,
+      spaceBetween: 24,
+    },
+    992: {
+      slidesPerView: 3.5,
+      spaceBetween: 24,
+    },
+    768: {
+      slidesPerView: 2.05,
+      spaceBetween: 24,
+    }
+  }
 });
 
 // Инициализация превью слайдера
