@@ -362,6 +362,27 @@
             }
         }
     }
+    .text_banner_bottom{
+        .text_banner2{
+            flex-direction: column;
+            .first_title {
+                font-size: 22px;
+                line-height: 28px;
+                margin-bottom: 40px;
+            }
+            p{
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+    .contact_us{
+        .contact_us_block{
+            .img_con{
+                display: none;
+            }
+        }
+    }
 }
 
 .history {
@@ -499,15 +520,22 @@
         .mySwiper {
             height: 416px;
 
-            .swipper-wrapper {
+            .swiper-wrapper {
                 height: 416px;
 
                 .swiper-slide {
                     .item_banner {
                         height: 416px;
-
+                        h1{
+                            color: var(--color-white, #FFF);
+                            text-align: center;
+                            font-family: 'Manrope',sans-serif;
+                            font-size: 28px;
+                            line-height: 32px; /* 114.286% */
+                        }
                         img {
-                            height: 416;
+                            height: 120px;
+                            width: 395px;
                         }
                     }
                 }
@@ -683,6 +711,15 @@
             }
         }
     }
+    .articles{
+        .title_article{
+            .btn_art{
+                a{
+                    display: none;
+                }
+            }
+        }
+    }
 }
 @media only screen and (max-width: 650px) {
     .about_hero{
@@ -721,8 +758,6 @@
 
             iframe {
                 height: 500px;
-
-                .poiner_media_share_btn {}
             }
         }
     }

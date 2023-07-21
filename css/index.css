@@ -69,6 +69,13 @@ header .header_top {
 header .header_top .logo .logo_first {
   margin-right: 50px;
 }
+header .header_top .header_media_btn {
+  display: none;
+}
+header .header_top .header_media_btn button {
+  border: none;
+  background-color: transparent;
+}
 header .header_top .contact_header {
   display: flex;
 }
@@ -103,7 +110,7 @@ header .header_top .contact_header .search_header {
 }
 header .header_top .contact_header .search_header input {
   width: 222px;
-  background-image: url(../images/search.svg);
+  background-image: url("../images/search.svg");
   background-repeat: no-repeat;
   background-position: calc(9% - 10px);
   outline: none;
@@ -136,7 +143,36 @@ header .header_top .contact_header .search_header a {
   text-decoration: underline;
 }
 header .bars {
-  display: none;
+  display: block;
+}
+
+.order_form {
+  padding-top: 64px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: -1;
+  transition: ease 0.5s all;
+}
+.order_form .order_form-close {
+  position: absolute;
+  top: 60px;
+  right: 100px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.order_form--active {
+  top: 0;
 }
 
 .menu_header .menu_child ul {
@@ -567,7 +603,8 @@ header .bars {
 .contact_us .contact_us_block .img_con img:last-child {
   margin-bottom: 0;
 }
-.contact_us .title_conatcts .title_c h2 {
+
+.title_conatcts .title_c h2 {
   color: var(--color-base-text, #4a4a4a);
   font-size: 40px;
   font-style: normal;
@@ -576,7 +613,7 @@ header .bars {
   /* 100% */
   margin-bottom: 64px;
 }
-.contact_us .title_conatcts .title_c p {
+.title_conatcts .title_c p {
   color: var(--color-base-text, #4a4a4a);
   font-family: Manrope;
   font-size: 16px;
@@ -586,10 +623,10 @@ header .bars {
   /* 150% */
   margin-bottom: 64px;
 }
-.contact_us .title_conatcts .form_control {
+.title_conatcts .form_control {
   margin-bottom: 40px;
 }
-.contact_us .title_conatcts .form_control h3 {
+.title_conatcts .form_control h3 {
   color: var(--color-base-text, #4a4a4a);
   font-size: 22px;
   font-style: normal;
@@ -598,7 +635,7 @@ header .bars {
   /* 127.273% */
   margin-bottom: 24px;
 }
-.contact_us .title_conatcts .form_control textarea {
+.title_conatcts .form_control textarea {
   border-bottom: 1px solid var(--color-base-text, #4a4a4a);
   width: 312px;
   border-top: none;
@@ -614,7 +651,7 @@ header .bars {
   line-height: 21px;
   /* 150% */
 }
-.contact_us .title_conatcts .form_control input {
+.title_conatcts .form_control input {
   border-bottom: 1px solid var(--color-base-text, #4a4a4a);
   width: 312px;
   outline: none;
@@ -631,7 +668,7 @@ header .bars {
   line-height: 21px;
   /* 150% */
 }
-.contact_us .title_conatcts .form_control input::-moz-placeholder {
+.title_conatcts .form_control input::-moz-placeholder {
   color: var(--color-base-text-shift-down-2, #9b9b9b);
   font-family: Manrope;
   font-size: 14px;
@@ -640,7 +677,7 @@ header .bars {
   line-height: 21px;
   /* 150% */
 }
-.contact_us .title_conatcts .form_control input::placeholder {
+.title_conatcts .form_control input::placeholder {
   color: var(--color-base-text-shift-down-2, #9b9b9b);
   font-family: Manrope;
   font-size: 14px;
@@ -649,14 +686,14 @@ header .bars {
   line-height: 21px;
   /* 150% */
 }
-.contact_us .title_conatcts .btn_form_control {
+.title_conatcts .btn_form_control {
   display: flex;
   margin-top: 60px;
 }
-.contact_us .title_conatcts .btn_form_control .btn_f {
+.title_conatcts .btn_form_control .btn_f {
   margin-right: 40px;
 }
-.contact_us .title_conatcts .btn_form_control .btn_f button {
+.title_conatcts .btn_form_control .btn_f button {
   color: var(--color-base-text, #4a4a4a);
   text-align: center;
   background-color: transparent;
@@ -669,16 +706,16 @@ header .bars {
   line-height: 24px;
   /* 150% */
 }
-.contact_us .title_conatcts .btn_form_control .check_btn {
+.title_conatcts .btn_form_control .check_btn {
   display: flex;
 }
-.contact_us .title_conatcts .btn_form_control .check_btn input {
+.title_conatcts .btn_form_control .check_btn input {
   width: 24px;
   height: 24px;
-  accent-color: #01A73F;
+  accent-color: #01a73f;
   margin-right: 16px;
 }
-.contact_us .title_conatcts .btn_form_control .check_btn p {
+.title_conatcts .btn_form_control .check_btn p {
   color: var(--color-base-text, #4a4a4a);
   font-size: 16px;
   font-style: normal;
@@ -686,7 +723,7 @@ header .bars {
   line-height: 24px;
   /* 150% */
 }
-.contact_us .title_conatcts .btn_form_control .check_btn p span {
+.title_conatcts .btn_form_control .check_btn p span {
   text-decoration-line: underline;
 }
 
@@ -715,7 +752,8 @@ header .bars {
   line-height: 24px;
   /* 150% */
 }
-.articles .title_article .btn_art A {
+.articles .title_article .btn_art a {
+  white-space: nowrap;
   color: var(--color-base-text, #4a4a4a);
   text-align: center;
   font-size: 16px;
@@ -1527,6 +1565,7 @@ header .bars {
   line-height: 40px;
   /* 100% */
 }
+
 .our_awards2 .title_awards {
   margin-bottom: 64px;
 }
@@ -1562,20 +1601,20 @@ header .bars {
   gap: 24px;
 }
 .project-card #installation_home .head_link_wrapper .head_link a {
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  border-bottom: 1px solid #4A4A4A;
+  border-bottom: 1px solid #4a4a4a;
 }
 .project-card #installation_home .head_link_wrapper .head_link .current_page {
   border-bottom: none;
-  color: #9B9B9B;
+  color: #9b9b9b;
 }
 .project-card #installation_home .head_link_wrapper .page_title {
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: "Manrope", sans-serif;
   font-size: 40px;
   font-style: normal;
@@ -1602,7 +1641,7 @@ header .bars {
   margin-bottom: 40px;
 }
 .project-card #stand .img_calculation h1 {
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: "Manrope", sans-serif;
   font-size: 28px;
   font-style: normal;
@@ -1627,7 +1666,7 @@ header .bars {
      object-fit: cover;
 }
 .project-card #stand .img_calculation .img_list .active {
-  border: 1px solid #9B9B9B;
+  border: 1px solid #9b9b9b;
 }
 @media screen and (max-width: 992px) {
   .project-card #stand .img_calculation .selected_img img {
@@ -1667,7 +1706,7 @@ header .bars {
   margin-bottom: 104px;
 }
 .project-card #milking .img_calculation h1 {
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: "Manrope", sans-serif;
   font-size: 28px;
   font-style: normal;
@@ -1692,7 +1731,7 @@ header .bars {
      object-fit: cover;
 }
 .project-card #milking .img_calculation .img_list .active {
-  border: 1px solid #9B9B9B;
+  border: 1px solid #9b9b9b;
 }
 @media screen and (max-width: 992px) {
   .project-card #milking .img_calculation .selected_img img {
@@ -1734,20 +1773,20 @@ header .bars {
   gap: 24px;
 }
 .installation_work #installation_home .head_link_wrapper .head_link a {
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  border-bottom: 1px solid #4A4A4A;
+  border-bottom: 1px solid #4a4a4a;
 }
 .installation_work #installation_home .head_link_wrapper .head_link .current_page {
   border-bottom: none;
-  color: #9B9B9B;
+  color: #9b9b9b;
 }
 .installation_work #installation_home .head_link_wrapper .page_title {
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: "Manrope", sans-serif;
   font-size: 40px;
   font-style: normal;
@@ -1763,7 +1802,7 @@ header .bars {
   }
 }
 .installation_work #installation_home .head_link_wrapper .text {
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -1780,7 +1819,7 @@ header .bars {
   margin-bottom: 40px;
 }
 .installation_work #stand .img_calculation h1 {
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: "Manrope", sans-serif;
   font-size: 28px;
   font-style: normal;
@@ -1805,7 +1844,7 @@ header .bars {
      object-fit: cover;
 }
 .installation_work #stand .img_calculation .img_list .active {
-  border: 1px solid #9B9B9B;
+  border: 1px solid #9b9b9b;
 }
 @media screen and (max-width: 992px) {
   .installation_work #stand .img_calculation .selected_img img {
@@ -1845,7 +1884,7 @@ header .bars {
   margin-bottom: 104px;
 }
 .installation_work #milking .img_calculation h1 {
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: "Manrope", sans-serif;
   font-size: 28px;
   font-style: normal;
@@ -1870,7 +1909,7 @@ header .bars {
      object-fit: cover;
 }
 .installation_work #milking .img_calculation .img_list .active {
-  border: 1px solid #9B9B9B;
+  border: 1px solid #9b9b9b;
 }
 @media screen and (max-width: 992px) {
   .installation_work #milking .img_calculation .selected_img img {
@@ -1917,7 +1956,7 @@ header .bars {
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   text-align: center;
   font-family: "Manrope", sans-serif;
   font-size: 16px;
@@ -1925,7 +1964,7 @@ header .bars {
   font-weight: 400;
   line-height: 24px;
   border-radius: 64px;
-  border: 1px solid var(--color-base-text, #4A4A4A);
+  border: 1px solid var(--color-base-text, #4a4a4a);
 }
 .poiner_wrapper .poiner_title .poiner_btn img {
   margin-left: 8px;
@@ -1939,7 +1978,7 @@ header .bars {
 }
 .poiner_wrapper .poiner_menu .poiner_menu_btn {
   background-color: transparent;
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   text-align: center;
   font-family: Manrope;
   font-size: 16px;
@@ -1948,7 +1987,7 @@ header .bars {
   line-height: 24px;
   padding: 16px;
   border-radius: 64px;
-  border: 1px solid var(--color-base-text, #4A4A4A);
+  border: 1px solid var(--color-base-text, #4a4a4a);
 }
 .poiner_wrapper .poiner_img {
   margin-bottom: 64px;
@@ -1958,7 +1997,7 @@ header .bars {
   width: 100%;
 }
 .poiner_wrapper .poiner_img .poiner_img_text {
-  color: var(--color-base-text-shift-down-2, #9B9B9B);
+  color: var(--color-base-text-shift-down-2, #9b9b9b);
   font-family: "Manrope", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -1967,7 +2006,7 @@ header .bars {
   margin-top: 24px;
 }
 .poiner_wrapper .poiner_comment h4 {
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   font-family: "Manrope", sans-serif;
   font-size: 28px;
   font-style: normal;
@@ -1986,7 +2025,7 @@ header .bars {
 }
 .poiner_wrapper .poiner_comment .poiner_comment_main .poiner_comment_right .comment_right_text {
   margin-top: 0;
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -1996,7 +2035,7 @@ header .bars {
   max-width: 525px;
 }
 .poiner_wrapper .poiner_comment .poiner_comment_main .poiner_comment_right h5 {
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   font-family: "Manrope", sans-serif;
   font-size: 22px;
   font-style: normal;
@@ -2005,7 +2044,7 @@ header .bars {
   margin-top: 24px;
 }
 .poiner_wrapper .poiner_comment .poiner_comment_main .poiner_comment_right span {
-  color: var(--color-base-text-shift-down-2, #9B9B9B);
+  color: var(--color-base-text-shift-down-2, #9b9b9b);
   font-family: "Manrope", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -2024,7 +2063,7 @@ header .bars {
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   text-align: center;
   font-family: "Manrope", sans-serif;
   font-size: 16px;
@@ -2032,13 +2071,13 @@ header .bars {
   font-weight: 400;
   line-height: 24px;
   border-radius: 64px;
-  border: 1px solid var(--color-base-text, #4A4A4A);
+  border: 1px solid var(--color-base-text, #4a4a4a);
 }
 .poiner_wrapper .poiner_media_share .poiner_media_share_btn img {
   margin-left: 8px;
 }
 .poiner_wrapper .poiner_news .poiner_news_title {
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   font-family: "Manrope", sans-serif;
   font-size: 40px;
   font-style: normal;
@@ -2057,7 +2096,7 @@ header .bars {
   width: 100%;
 }
 .poiner_wrapper .poiner_news .poiner_news_cards .poiner_news_card h3 {
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   font-family: "Manrope", sans-serif;
   font-size: 28px;
   font-style: normal;
@@ -2067,7 +2106,7 @@ header .bars {
 }
 .poiner_wrapper .poiner_news .poiner_news_cards .poiner_news_card p {
   max-width: 416px;
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   text-overflow: ellipsis;
   font-family: "Manrope", sans-serif;
   font-size: 16px;
@@ -2077,7 +2116,7 @@ header .bars {
   margin-bottom: 24px;
 }
 .poiner_wrapper .poiner_news .poiner_news_cards .poiner_news_card .poiner_news_card_link {
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   font-family: Manrope;
   font-size: 16px;
   font-style: normal;
@@ -2093,7 +2132,7 @@ header .bars {
 .poiner_wrapper .poiner_news .poiner_news_cards_full .poiner_news_cards_full_btn {
   padding: 16px;
   background-color: transparent;
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   text-align: center;
   font-family: "Manrope", sans-serif;
   font-size: 16px;
@@ -2101,7 +2140,7 @@ header .bars {
   font-weight: 400;
   line-height: 24px;
   border-radius: 64px;
-  border: 1px solid var(--color-base-text, #4A4A4A);
+  border: 1px solid var(--color-base-text, #4a4a4a);
 }
 
 .contact_map_media {
@@ -2111,7 +2150,7 @@ header .bars {
   padding: 64px;
   display: flex;
   flex-direction: column;
-  background: var(--color-base, #4A65C3);
+  background: var(--color-base, #4a65c3);
 }
 .contact_map_media .contact_map_content img {
   width: 201px;
@@ -2119,7 +2158,7 @@ header .bars {
   margin-bottom: 40px;
 }
 .contact_map_media .contact_map_content span {
-  color: var(--color-base-text-shift-down, #F8F8F8);
+  color: var(--color-base-text-shift-down, #f8f8f8);
   font-family: "Manrope", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -2129,7 +2168,7 @@ header .bars {
 }
 .contact_map_media .contact_map_content a {
   max-width: 351px;
-  color: var(--color-white, #FFF);
+  color: var(--color-white, #fff);
   font-family: "Manrope", sans-serif;
   font-size: 22px;
   font-style: normal;
@@ -2143,7 +2182,7 @@ header .bars {
 }
 
 .contacts_wrapper .contacts_title h2 {
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   font-family: Manrope;
   font-size: 40px;
   font-style: normal;
@@ -2163,7 +2202,7 @@ header .bars {
   margin: 24px 0;
 }
 .contacts_wrapper .contacts_sales .contacts_sales_title h4 {
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   font-family: Manrope;
   font-size: 24px;
   font-style: normal;
@@ -2188,7 +2227,7 @@ header .bars {
   border-top: 1px solid var(--color-line, rgba(16, 16, 16, 0.1));
 }
 .contacts_wrapper .contacts_services .contacts_title h2 {
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   font-family: Manrope;
   font-size: 28px;
   font-style: normal;
@@ -2199,7 +2238,7 @@ header .bars {
 .contacts_wrapper .contacts_services .contacts_title P {
   margin: 40px 0;
   max-width: 636px;
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   font-family: Manrope;
   font-size: 16px;
   font-style: normal;
@@ -2218,7 +2257,7 @@ header .bars {
 }
 .contacts_wrapper .contacts_services .contact_department .contact_department_title {
   margin: 24px 0;
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   font-family: "Manrope", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -2245,7 +2284,7 @@ header .bars {
   margin-bottom: 64px;
 }
 .contacts_wrapper .contacts_comments .contacts_comments_title h3 {
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   font-family: "Manrope", sans-serif;
   font-size: 40px;
   font-style: normal;
@@ -2264,7 +2303,7 @@ header .bars {
   margin-bottom: 24px;
 }
 .contacts_wrapper .contacts_comments .contacts_comments_wrapper .contacts_left .contacts_comment_block_title .contacts_comment_block_title_left h2 {
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   font-family: "Manrope", sans-serif;
   font-size: 28px;
   font-style: normal;
@@ -2273,7 +2312,7 @@ header .bars {
   margin-bottom: 8px;
 }
 .contacts_wrapper .contacts_comments .contacts_comments_wrapper .contacts_left .contacts_comment_block_title .contacts_comment_block_title_left span {
-  color: var(--color-base-text-shift-down-2, #9B9B9B);
+  color: var(--color-base-text-shift-down-2, #9b9b9b);
   font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -2284,7 +2323,7 @@ header .bars {
   margin-left: 64px;
 }
 .contacts_wrapper .contacts_comments .contacts_comments_wrapper .contacts_left .contacts_comment_block_title .contacts_comment_block_title_right h3 {
-  color: var(--color-base, #4A65C3);
+  color: var(--color-base, #4a65c3);
   font-family: "Manrope", sans-serif;
   font-size: 22px;
   font-style: normal;
@@ -2292,7 +2331,7 @@ header .bars {
   line-height: 28px;
 }
 .contacts_wrapper .contacts_comments .contacts_comments_wrapper .contacts_left p {
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -2305,7 +2344,7 @@ header .bars {
 }
 .contacts_wrapper .contacts_comments .contacts_comments_wrapper .contacts_right h2 {
   margin-bottom: 64px;
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   font-family: "Manrope", sans-serif;
   font-size: 28px;
   font-style: normal;
@@ -2313,7 +2352,7 @@ header .bars {
   line-height: 32px;
 }
 .contacts_wrapper .contacts_comments .contacts_comments_wrapper .contacts_right .contacts_right_contact label {
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   font-family: "Manrope", sans-serif;
   font-size: 22px;
   font-style: normal;
@@ -2326,7 +2365,7 @@ header .bars {
   width: 100%;
   border: none;
   padding: 8px 0;
-  border-bottom: 1px solid var(--color-base-text, #4A4A4A);
+  border-bottom: 1px solid var(--color-base-text, #4a4a4a);
 }
 .contacts_wrapper .contacts_comments .contacts_comments_wrapper .contacts_right .contacts_right_contact .right_contact_input:focus {
   box-shadow: none !important;
@@ -2335,7 +2374,7 @@ header .bars {
 .contacts_wrapper .contacts_comments .contacts_comments_wrapper .contacts_right .contacts_right_contact textarea {
   width: 100%;
   height: 93px;
-  color: var(--color-base-text-shift-down-2, #9B9B9B);
+  color: var(--color-base-text-shift-down-2, #9b9b9b);
   font-family: Manrope;
   font-size: 14px;
   font-style: normal;
@@ -2344,7 +2383,7 @@ header .bars {
   padding: 8px 0;
   border: none;
   resize: none;
-  border-bottom: 1px solid var(--color-base-text, #4A4A4A);
+  border-bottom: 1px solid var(--color-base-text, #4a4a4a);
 }
 .contacts_wrapper .contacts_comments .contacts_comments_wrapper .contacts_right .contacts_right_contact textarea:focus {
   box-shadow: none !important;
@@ -2359,13 +2398,13 @@ header .bars {
   display: block;
   width: 24px;
   height: 24px;
-  accent-color: #01A73F;
-  border: 1px solid var(--color-base-text-shift-down-2, #9B9B9B);
+  accent-color: #01a73f;
+  border: 1px solid var(--color-base-text-shift-down-2, #9b9b9b);
 }
 .contacts_wrapper .contacts_comments .contacts_comments_wrapper .contacts_right .contacts_right_contact .contacts_right_check p {
   max-width: 331px;
   margin-left: 16px;
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -2380,7 +2419,7 @@ header .bars {
 }
 .contacts_wrapper .contacts_comments .contacts_comments_wrapper .contacts_right .contacts_right_contact .contacts_right_contact_btn button {
   background-color: transparent;
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   padding: 16px;
   text-align: center;
   font-family: "Manrope", sans-serif;
@@ -2389,7 +2428,7 @@ header .bars {
   font-weight: 400;
   line-height: 24px;
   border-radius: 64px;
-  border: 1px solid var(--color-base-text, #4A4A4A);
+  border: 1px solid var(--color-base-text, #4a4a4a);
 }
 .contacts_wrapper .contacts_comments .full_comment_btn {
   margin-bottom: 104px;
@@ -2399,7 +2438,7 @@ header .bars {
 }
 .contacts_wrapper .contacts_comments .full_comment_btn button {
   background-color: transparent;
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   padding: 16px;
   text-align: center;
   font-family: "Manrope", sans-serif;
@@ -2408,7 +2447,7 @@ header .bars {
   font-weight: 400;
   line-height: 24px;
   border-radius: 64px;
-  border: 1px solid var(--color-base-text, #4A4A4A);
+  border: 1px solid var(--color-base-text, #4a4a4a);
 }
 
 .contacts_map {
@@ -2423,7 +2462,7 @@ header .bars {
 }
 .counter_section .client_contact .contacts_left h2 {
   margin-bottom: 40px;
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   font-family: "Manrope", sans-serif;
   font-size: 28px;
   font-style: normal;
@@ -2432,7 +2471,7 @@ header .bars {
 }
 .counter_section .client_contact .contacts_left p {
   margin-bottom: 40px;
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -2440,7 +2479,7 @@ header .bars {
   line-height: 24px;
 }
 .counter_section .client_contact .contacts_left .contacts_right_contact label {
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   font-family: "Manrope", sans-serif;
   font-size: 22px;
   font-style: normal;
@@ -2454,7 +2493,7 @@ header .bars {
   margin-bottom: 40px;
   border: none;
   padding: 8px 0;
-  border-bottom: 1px solid var(--color-base-text, #4A4A4A);
+  border-bottom: 1px solid var(--color-base-text, #4a4a4a);
 }
 .counter_section .client_contact .contacts_left .contacts_right_contact .right_contact_input:focus {
   box-shadow: none !important;
@@ -2463,7 +2502,7 @@ header .bars {
 .counter_section .client_contact .contacts_left .contacts_right_contact textarea {
   width: 100%;
   height: 93px;
-  color: var(--color-base-text-shift-down-2, #9B9B9B);
+  color: var(--color-base-text-shift-down-2, #9b9b9b);
   font-family: Manrope;
   font-size: 14px;
   font-style: normal;
@@ -2472,7 +2511,7 @@ header .bars {
   padding: 8px 0;
   border: none;
   resize: none;
-  border-bottom: 1px solid var(--color-base-text, #4A4A4A);
+  border-bottom: 1px solid var(--color-base-text, #4a4a4a);
 }
 .counter_section .client_contact .contacts_left .contacts_right_contact textarea:focus {
   box-shadow: none !important;
@@ -2484,7 +2523,7 @@ header .bars {
 }
 .counter_section .client_contact .contacts_left .contacts_right_contact .contacts_right_check .contacts_right_contact_btn button {
   background-color: transparent;
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   padding: 16px;
   text-align: center;
   font-family: "Manrope", sans-serif;
@@ -2493,7 +2532,7 @@ header .bars {
   font-weight: 400;
   line-height: 24px;
   border-radius: 64px;
-  border: 1px solid var(--color-base-text, #4A4A4A);
+  border: 1px solid var(--color-base-text, #4a4a4a);
 }
 .counter_section .client_contact .contacts_left .contacts_right_contact .contacts_right_check .contacts_right_check_inputs {
   display: flex;
@@ -2504,13 +2543,13 @@ header .bars {
   display: block;
   width: 24px;
   height: 24px;
-  accent-color: #01A73F;
-  border: 1px solid var(--color-base-text-shift-down-2, #9B9B9B);
+  accent-color: #01a73f;
+  border: 1px solid var(--color-base-text-shift-down-2, #9b9b9b);
 }
 .counter_section .client_contact .contacts_left .contacts_right_contact .contacts_right_check .contacts_right_check_inputs p {
   max-width: 331px;
   margin-left: 16px;
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -2521,13 +2560,13 @@ header .bars {
   text-decoration-line: underline;
 }
 .counter_section .working {
-  background: var(--color-base-text-shift-down, #F8F8F8);
+  background: var(--color-base-text-shift-down, #f8f8f8);
 }
 .counter_section .working .working_title {
   margin-bottom: 64px;
 }
 .counter_section .working .working_title h3 {
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   font-family: "Manrope", sans-serif;
   font-size: 28px;
   font-style: normal;
@@ -2544,7 +2583,7 @@ header .bars {
 }
 .counter_section .working .working_cards .working_card .working_card_title h4 {
   margin-left: 16px;
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   font-family: "Manrope", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -2553,7 +2592,7 @@ header .bars {
 }
 .counter_section .working .working_cards .working_card .working_card_title h3 {
   margin-left: 30px;
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   font-family: "Manrope", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -2562,7 +2601,7 @@ header .bars {
 }
 .counter_section .working .working_cards .working_card p {
   margin-left: 64px;
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   font-family: Manrope;
   font-size: 16px;
   font-style: normal;
@@ -2573,7 +2612,7 @@ header .bars {
   content: "";
   width: 1px;
   height: 144px;
-  background-color: var(--color-base-text, #4A4A4A);
+  background-color: var(--color-base-text, #4a4a4a);
   position: absolute;
   left: 15px;
   top: 0;
@@ -2585,7 +2624,7 @@ header .bars {
   margin-bottom: 40px;
 }
 .counter_section .logistic .logistic_title h3 {
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   font-family: Manrope;
   font-size: 28px;
   font-style: normal;
@@ -2594,7 +2633,7 @@ header .bars {
 }
 .counter_section .logistic p {
   max-width: 746px;
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   font-family: Manrope;
   font-size: 16px;
   font-style: normal;
@@ -2616,7 +2655,7 @@ header .bars {
   margin-bottom: 40px;
 }
 .counter_section .service .service_title h3 {
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   font-family: Manrope;
   font-size: 28px;
   font-style: normal;
@@ -2625,7 +2664,7 @@ header .bars {
 }
 .counter_section .service p {
   max-width: 746px;
-  color: var(--color-base-text, #4A4A4A);
+  color: var(--color-base-text, #4a4a4a);
   font-family: Manrope;
   font-size: 16px;
   font-style: normal;
@@ -2647,20 +2686,20 @@ header .bars {
   gap: 24px;
 }
 .history #history_home .head_link_wrapper .head_link a {
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  border-bottom: 1px solid #4A4A4A;
+  border-bottom: 1px solid #4a4a4a;
 }
 .history #history_home .head_link_wrapper .head_link .current_page {
   border-bottom: none;
-  color: #9B9B9B;
+  color: #9b9b9b;
 }
 .history #history_home .head_link_wrapper .page_title {
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: "Manrope", sans-serif;
   font-size: 40px;
   font-style: normal;
@@ -2689,7 +2728,7 @@ header .bars {
   margin-bottom: 64px;
 }
 .history #history_filter .filter_datas .filter_item h3 {
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: "Manrope", sans-serif;
   font-size: 28px;
   font-style: normal;
@@ -2698,7 +2737,7 @@ header .bars {
   margin-bottom: 40px;
 }
 .history #history_filter .filter_datas .filter_item .body_description {
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -2714,7 +2753,7 @@ header .bars {
   gap: 69px;
 }
 .history #history_filter .filter_datas .filter_item .filter_item_foot .text .description {
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -2723,7 +2762,7 @@ header .bars {
   margin-bottom: 24px;
 }
 .history #history_filter .filter_datas .filter_item .filter_item_foot .text h4 {
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: "Manrope", sans-serif;
   font-size: 22px;
   font-style: normal;
@@ -2732,7 +2771,7 @@ header .bars {
   margin-bottom: 8px;
 }
 .history #history_filter .filter_datas .filter_item .filter_item_foot .text .author {
-  color: #9B9B9B;
+  color: #9b9b9b;
   font-family: "Manrope", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -2750,7 +2789,7 @@ header .bars {
   flex-direction: column;
   padding: 64px 0;
   border-right: 1px solid rgba(16, 16, 16, 0.1);
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
 .history #history_filter .filter_buttons_list button {
   display: block;
@@ -2759,7 +2798,7 @@ header .bars {
   background: transparent;
   border: 0;
   border-bottom: 1px solid rgba(16, 16, 16, 0.1);
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: "Manrope", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -2768,7 +2807,7 @@ header .bars {
   padding: 16px 40px;
 }
 .history #history_filter .filter_buttons_list .active {
-  background: #01A73F;
+  background: #01a73f;
   color: white;
 }
 
@@ -2778,20 +2817,20 @@ header .bars {
   gap: 24px;
 }
 .faq #faq_home .head_link_wrapper .head_link a {
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  border-bottom: 1px solid #4A4A4A;
+  border-bottom: 1px solid #4a4a4a;
 }
 .faq #faq_home .head_link_wrapper .head_link .current_page {
   border-bottom: none;
-  color: #9B9B9B;
+  color: #9b9b9b;
 }
 .faq #faq_home .head_link_wrapper .page_title {
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: "Manrope", sans-serif;
   font-size: 40px;
   font-style: normal;
@@ -2810,7 +2849,7 @@ header .bars {
   margin-bottom: 104px;
 }
 .faq #faq_accardion .accordion .accordion-item .accordion-header .accordion-button {
-  color: #9B9B9B !important;
+  color: #9b9b9b !important;
   font-family: "Manrope", sans-serif;
   font-size: 22px;
   font-style: normal;
@@ -2825,7 +2864,7 @@ header .bars {
   transform: translateX(64px);
 }
 .faq #faq_accardion .accordion .accordion-item .accordion-header .collapsed {
-  color: #4A4A4A !important;
+  color: #4a4a4a !important;
   font-family: "Manrope", sans-serif;
   font-size: 22px;
   font-style: normal;
@@ -2840,7 +2879,7 @@ header .bars {
   align-items: flex-start;
   gap: 5px;
   padding-left: 5px;
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -3116,6 +3155,21 @@ header .bars {
     border: 1px solid var(--color-base-text, #4a4a4a);
     line-height: 24px;
   }
+  .text_banner_bottom .text_banner2 {
+    flex-direction: column;
+  }
+  .text_banner_bottom .text_banner2 .first_title {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 40px;
+  }
+  .text_banner_bottom .text_banner2 p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .contact_us .contact_us_block .img_con {
+    display: none;
+  }
 }
 .history #history_filter .filter_buttons_list {
   padding: 0px;
@@ -3206,14 +3260,22 @@ header .bars {
   .hero_section .mySwiper {
     height: 416px;
   }
-  .hero_section .mySwiper .swipper-wrapper {
+  .hero_section .mySwiper .swiper-wrapper {
     height: 416px;
   }
-  .hero_section .mySwiper .swipper-wrapper .swiper-slide .item_banner {
+  .hero_section .mySwiper .swiper-wrapper .swiper-slide .item_banner {
     height: 416px;
   }
-  .hero_section .mySwiper .swipper-wrapper .swiper-slide .item_banner img {
-    height: 416;
+  .hero_section .mySwiper .swiper-wrapper .swiper-slide .item_banner h1 {
+    color: var(--color-white, #FFF);
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-size: 28px;
+    line-height: 32px; /* 114.286% */
+  }
+  .hero_section .mySwiper .swiper-wrapper .swiper-slide .item_banner img {
+    height: 120px;
+    width: 395px;
   }
   .hero_section .mySwiper .swiper-button-next {
     right: 42px;
@@ -3323,6 +3385,9 @@ header .bars {
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
+  }
+  .articles .title_article .btn_art a {
+    display: none;
   }
 }
 @media only screen and (max-width: 650px) {
